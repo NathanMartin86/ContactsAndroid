@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         String name = nameField.getText().toString();
         String phone = phoneField.getText().toString();
-        String newContact = String.format("%s %s",name,phone);
+        String newContact = String.format("%s %s %s %s",name,"(",phone,")");
         contacts.add(newContact);
         nameField.setText("");
         phoneField.setText("");
